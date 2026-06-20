@@ -2,7 +2,14 @@ FROM eclipse-temurin:17-jdk-jammy
 
 WORKDIR /app
 
-COPY target/securetrack-0.0.1-SNAPSHOT.jar app.jar
+# Copiar todo el código fuente
+COPY . .
+
+# Construir el proyecto dentro del contenedor
+RUN ./mvnw clean package -DskipTests
+
+# Mover el jar generado
+RUN cp target/*.jar app.jar
 
 EXPOSE 8080
 
