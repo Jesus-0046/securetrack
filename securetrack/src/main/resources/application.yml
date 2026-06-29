@@ -1,33 +1,23 @@
 spring:
   application:
     name: securetrack
-
   datasource:
-    url: jdbc:mysql://localhost:3306/securetrack?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-    username: ${MYSQL_USERNAME:root}
-    password: ${MYSQL_PASSWORD}
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
     show-sql: false
-    properties:
-      hibernate:
-        format_sql: true
-    open-in-view: false
 
 server:
   port: 8080
 
-logging:
-  level:
-    com.securetrack: INFO
-    org.springframework.security: INFO
-
 app:
   jwt:
-    secret: miClaveSecretaSuperSeguraDeAlMenos256BitsParaHS256
+    secret: ${APP_JWT_SECRET}
     expiration-ms: 86400000
 
 springdoc:

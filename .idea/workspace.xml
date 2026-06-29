@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab342413-35f9-4e3e-829f-32d4ac14ed93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/securetrack/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/securetrack/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/securetrack/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/securetrack/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/securetrack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/securetrack/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/securetrack/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/securetrack/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.SecuretrackApplication.executor": "Debug",
+    "Application.SecuretrackApplication.executor": "Run",
     "JUnit.UserServiceTest.executor": "Run",
     "Maven.securetrack [clean].executor": "Run",
     "Maven.securetrack [package].executor": "Run",
