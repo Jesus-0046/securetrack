@@ -20,7 +20,16 @@ Desarrollado como proyecto de fin de ciclo DAM con enfoque en seguridad y buenas
 
 ## 🚀 Demo
 
-Documentación Swagger: `http://localhost:8080/swagger-ui/index.html`
+API en producción: [https://securetrack-qqll.onrender.com](https://securetrack-qqll.onrender.com)
+
+Documentación Swagger: [https://securetrack-qqll.onrender.com/swagger-ui/index.html](https://securetrack-qqll.onrender.com/swagger-ui/index.html)
+
+### Credenciales de prueba
+
+| Usuario | Contraseña | Rol |
+|---------|------------|-----|
+| `admin` | `admin123` | ADMIN |
+| `user1` | `user123` | USER |
 
 ## 🛠 Stack Tecnológico
 
