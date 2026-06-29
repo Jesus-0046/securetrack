@@ -1,16 +1,12 @@
-FROM eclipse-temurin:17-jdk-jammy
+FROM maven:3.9-eclipse-temurin-17
 
 WORKDIR /app
 
-# Copiar todo el código fuente
-COPY . .
+COPY pom.xml .
+COPY src ./src
 
-# Construir el proyecto dentro del contenedor
-RUN ./mvnw clean package -DskipTests
-
-# Mover el jar generado
-RUN cp target/*.jar app.jar
+RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "target/securetrack-0.0.1-SNAPSHOT.jar"]
